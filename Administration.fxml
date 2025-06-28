@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="587.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdministrationController">
+   <children>
+      <AnchorPane prefHeight="48.0" prefWidth="728.0" style="-fx-background-color: #447CC4;">
+         <children>
+            <Label layoutX="325.0" layoutY="16.0" text="Administration" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TilePane layoutY="48.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="206.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/gestion-de-projet.png" />
+               </image>
+            </ImageView>
+         </children>
+      </TilePane>
+      <Button fx:id="Button1" layoutX="57.0" layoutY="262.0" mnemonicParsing="false" onAction="#Gestions_ELeves" prefHeight="26.0" prefWidth="120.0" style="-fx-background-color: #447CC4;" text="Gestions_Eleves" textFill="WHITE" />
+      <TilePane layoutX="219.0" layoutY="48.0" prefHeight="191.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="195.0" fitWidth="220.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/group.png" />
+               </image>
+            </ImageView>
+         </children>
+      </TilePane>
+      <TilePane layoutX="479.0" layoutY="48.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="202.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/rapport.png" />
+               </image>
+            </ImageView>
+         </children>
+      </TilePane>
+      <Button fx:id="Button2" layoutX="261.0" layoutY="262.0" mnemonicParsing="false" onAction="#Comptes_Utilisateurs" prefHeight="26.0" prefWidth="131.0" style="-fx-background-color: #447CC4;" text="Comptes utilisateurs" textFill="WHITE" />
+      <Button fx:id="Button3" layoutX="552.0" layoutY="264.0" mnemonicParsing="false" onAction="#Rapports" prefHeight="26.0" prefWidth="120.0" style="-fx-background-color: #447CC4;" text="Rapports" textFill="WHITE" />
+   </children>
+</AnchorPane>
